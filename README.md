@@ -47,8 +47,8 @@ When you clone and build the project Cypress will be downloaded automatically if
 •	cypress.config.js: contains cypress configuration settings.<br><br>
 •	package.json: contains all the dependencies used in the project.<br><br>
 
-<h3>Reporting:</h3> <br>
-<h6>Mochawesome report (screenshots and videos are attached to the report by default) is used for reporting </h6><br>
+<h3>Reporting:</h3>
+<h6>Mochawesome report (screenshots and videos are attached to the report by default) is used for reporting </h6>
 
 <h3>Test Approach: </h3><br>
 <h4>What was considered essential to test:</h4><br>
