@@ -31,9 +31,12 @@ When you clone and build the project Cypress will be downloaded automatically if
 <h3>Running Tests:</h3>
 
 •	Running the Tests in the Cypress GUI:<br>
+
    **npm run cy:open** <br>
 (Run above command in CLI to open Cypress GUI and select E2E testing option-> choose any browser -> select a Test file you wish to run) <br>
+
 •	Running Tests in Headless Mode (CLI): <br>
+
             **npx cypress run** <br>
 **npx cypress run --spec "cypress/e2e/loginValidation.js"** – (To run a specific test file from CLI, replace file name with your test file name) <br>
 
