@@ -19,24 +19,23 @@ When you clone and build the project Cypress will be downloaded automatically if
 <h3>Setup:</h3>
 
 •	Clone the Git repository to your local machine:<br>
-                      git clone https://github.com/kpraveena825/DemoblazeAutomation.git<br><br>
+                      **git clone https://github.com/kpraveena825/DemoblazeAutomation.git<br>**
            
 •	Open the project directory in Visual Studio:<br>
                       In VS Code, open the terminal and navigate to the project directory:<br>
-                      cd "path/DemoblazeAutomation"<br><br>
+                      **cd "path/DemoblazeAutomation"<br>**
            
 •	Install project dependencies by running the following command in the terminal<br>
-                      <**npm install**><br><br>
+                      <**npm install**><br>
 
 <h3>Running Tests:</h3>
 
-<h6>Running the Tests in the Cypress GUI:</h6>
-            **npm run cy:open ** <br>
-(Run above command in CLI to open Cypress GUI and select E2E testing option-> choose any browser -> select a Test file you wish to run)<br><br>
-
-<h6>Running Tests in Headless Mode (CLI):</h6> <br>
-             **npx cypress run** <br>
-npx cypress run --spec "cypress/e2e/loginValidation.js" – (To run a specific test file from CLI, replace file name with your test file name)<br><br>
+•	Running the Tests in the Cypress GUI:<br>
+   **npm run cy:open** <br>
+(Run above command in CLI to open Cypress GUI and select E2E testing option-> choose any browser -> select a Test file you wish to run) <br>
+•	Running Tests in Headless Mode (CLI): <br>
+            **npx cypress run** <br>
+**npx cypress run --spec "cypress/e2e/loginValidation.js"** – (To run a specific test file from CLI, replace file name with your test file name) <br>
 
 <h3>Project Structure:</h3><br>
 
