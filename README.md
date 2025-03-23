@@ -42,9 +42,9 @@ When you clone and build the project Cypress will be downloaded automatically if
 
 <h3>Project Structure:</h3><br>
 
-•	cypress/e2e: contains all the test files/spec files, you can organize you tests into subsidiary as needed <br><br>
+•	cypress/e2e: contains all the test files/spec files, we can organize our tests into subsidiary as needed <br><br>
 •	cypress/fixtures: contains external fixtures (e.g : login credentials , user data, product details in json format) <br><br>
-•	cypress/support: contains custom commands and global configuration <br><br>
+•	cypress/support: contains custom commands and global configurations <br><br>
 •	cypress/supports/pageObjects: Contains Page object model(POM) classes representing webpages and their elements. <br><br>
 •	cypress/reports: contains test reports, screenshots and video evidences.<br><br>
 •	cypress.config.js: contains cypress configuration settings.<br><br>
