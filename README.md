@@ -18,14 +18,14 @@ When you clone and build the project Cypress will be downloaded automatically if
 
 <h3>Setup:</h3>
 
-•	Clone the Git repository to your local machine:<br>
-                      **git clone https://github.com/kpraveena825/DemoblazeAutomation.git<br>**
+•	Clone the Git repository to your local machine:<br><br>
+                     < **git clone https://github.com/kpraveena825/DemoblazeAutomation.git<br>** >
            
 •	Open the project directory in Visual Studio:<br>
-                      In VS Code, open the terminal and navigate to the project directory:<br>
-                      **cd "path/DemoblazeAutomation"<br>**
+                      In VS Code, open the terminal and navigate to the project directory:<br><br>
+                      < **cd "path/DemoblazeAutomation"** >
            
-•	Install project dependencies by running the following command in the terminal<br>
+•	Install project dependencies by running the following command in the terminal<br><br>
                       <**npm install**><br>
 
 <h3>Running Tests:</h3>
@@ -52,17 +52,19 @@ When you clone and build the project Cypress will be downloaded automatically if
 
 <h3>Test Approach: </h3><br>
 <h4>What was considered essential to test:</h4><br>
-I have aimed to cover 2 essential use cases of the e-commerce platform, <br><br>
-•	User login:<br>
- To ensure that only user with the valid credentials can log in to the application. and gets an error in case of invalid credentials. <br><br>
-•	Product Checkout E2E flow: <br>
-To ensure a seamless shopping experience, I’m verifying that products can be selected and added to the cart while maintaining the same price throughout the product flow—from product details to the cart page. Additionally, I’m validating that the cart accurately displays the selected products and total price. Finally, when user performs checkout an order confirmation overlay is displayed with the details.<br><br>
+I have aimed to cover 2 essential use cases of the e-commerce platform, 
 
+**User login:** <br>
+ To ensure that only user with the valid credentials can log in to the application. and gets an error in case of invalid credentials.
+ 
+**Product Checkout E2E flow:** <br>
+To ensure a seamless shopping experience, I’m verifying that products can be selected and added to the cart while maintaining the same price throughout the product flow—from product details to the cart page. Additionally, I’m validating that the cart accurately displays the selected products and total price. Finally, when user performs checkout an order confirmation overlay is displayed with the details.<br>
 
 <h3>Test Design</h3><br>
 I have used the Page Object Model (POM) design pattern to structure the test code for better maintainability and scalability by separating the test logic from the page structure and interactions. Each page of the application is represented by a corresponding Page Object, which contains methods for interacting with elements on that page.<br><br>
 
-<h5>Why POM?</h5><br>
+<h5>Why POM?</h5>
+
 **Testing Quality:** POM helps to write tests that are easy to understand and maintain. This can help improve the quality of the testing process to improve the readability and reliability of the scripts.<br><br>
 **Reusing Code:** Using POM, we can reuse our functions in different Test Scripts by importing them from Page Objects class. Redundant functions can be avoided this way. <br><br>
 **Easy maintenance:** It is easier to maintain, suppose if something got changed on any page, you could easily find the functions and locators that need to be changed by that page class. <br><br>
