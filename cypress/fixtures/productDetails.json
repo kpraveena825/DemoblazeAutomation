@@ -1,0 +1,17 @@
+{
+    "categories": {
+        "laptops": {
+            "name": "Laptops",
+            "products": [
+                {
+                    "title": "Sony vaio i5",
+                    "price": 790
+                }
+            ]
+        },
+        "monitors": {
+            "name": "Monitors",
+            "products": []
+        }
+    }
+}

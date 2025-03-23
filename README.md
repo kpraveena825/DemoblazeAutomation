@@ -1,2 +1,1 @@
-# DemoblazeAutomation
-Cypress automation framework
+Prerequisite:
