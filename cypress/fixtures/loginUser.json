@@ -1,0 +1,27 @@
+[
+    {
+      "username": "testuser09",
+      "password": "pass1",
+      "alertMessage": "Wrong password."
+    },
+    {
+      "username": "testuser0",
+      "password": "test123",
+      "alertMessage": "Wrong password."
+    },
+    {
+        "username": " ",
+        "password": " ",
+        "alertMessage": "Please fill out Username and Password."
+      },
+      {
+        "username": "testuser09",
+        "password": " ",
+        "alertMessage": "Please fill out Username and Password."
+      },
+      {
+        "username": " ",
+        "password": "test123",
+        "alertMessage": "Please fill out Username and Password."
+      }
+  ]
