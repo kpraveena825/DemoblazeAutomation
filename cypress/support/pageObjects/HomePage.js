@@ -21,7 +21,6 @@ class HomePage {
      */
     login(uname, password) {
         cy.get('#login2').click();
-        cy.wait(1000);
         cy.get('#loginusername').type(uname);
         cy.get('#loginpassword').type(password);
         this.loginButton.click();
