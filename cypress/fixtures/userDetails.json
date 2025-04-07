@@ -8,9 +8,5 @@
     "card": "1234 8765 9101 1120",
     "month": "02",
     "year": "2028"
-  },
-  "invalidCred": {
-    "username": "testuser09",
-    "password": "test234"
   }
 }

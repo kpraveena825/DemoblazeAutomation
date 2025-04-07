@@ -4,16 +4,15 @@ describe('Login Validation', () => {
 
     const homePage = new HomePage();
 
-    beforeEach(() => {
-        cy.fixture('userDetails').as('credentials');
+    const loginData = require('../fixtures/loginUser.json');
+
+    describe('Login validation with invalid credentials', () => {
+      loginData.forEach((user, index) => {
+        it(`Test case ${index + 1}: Login with username "${user.username}" and password "${user.password}"`, () => {
+          homePage.visitUrl();
+          homePage.login(user.username, user.password);
+          homePage.invalidLoginValidation(user.alertMessage);
+        });
+      });
     });
-
-    it('Login validation with invalid user', function () {
-        const data = this.credentials.invalidCred;
-        homePage.visitUrl();
-        homePage.login(data.username, data.password);
-        homePage.invalidLoginValidation();
-
-    })
-
 })

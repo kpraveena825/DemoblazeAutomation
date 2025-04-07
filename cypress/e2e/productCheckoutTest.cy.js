@@ -23,8 +23,7 @@ describe('Product purchase flow ', () => {
         const data = this.userData.userDetails;
         const laptopTitle = this.product.categories.laptops;
 
-        productPage.selectCategory(laptopTitle.name);
-        productPage.selectProduct(laptopTitle.products[0].title);
+        productPage.productSelection(laptopTitle.name,laptopTitle.products[0].title);
 
         productPage.getProductPrice().then((productPrice) => {
             expect(productPrice).equal(laptopTitle.products[0].price);
@@ -38,5 +37,30 @@ describe('Product purchase flow ', () => {
         cartPage.submitOrderForm(data.name, data.country, data.city, data.card, data.month, data.year);
         cartPage.validateSuccessPopup(data.name, data.card, laptopTitle.products[0].price);
     })
+
+    it('Place an order for multiple products to validate cart total', function () {
+        const data = this.userData.userDetails;
+        const laptopTitle = this.product.categories.laptops;
+
+       
+        productPage.productSelection(laptopTitle.name,laptopTitle.products[0].title);
+
+        productPage.getProductPrice().then((productPrice) => {
+            expect(productPrice).equal(laptopTitle.products[0].price);
+        });
+        productPage.addtoCart();
+        cartPage.validateCart(laptopTitle.products[0].title);
+
+        productPage.multipleProductSelection(laptopTitle.name,laptopTitle.products[1].title)
+        cartPage.validateCart(laptopTitle.products[1].title);
+
+        cartPage.productTotalSum().then((productTotal) => {
+            cartPage.getCartTotal().should('equal', productTotal);
+        });
+        cartPage.placeOrder();
+        cartPage.submitOrderForm(data.name, data.country, data.city, data.card, data.month, data.year);
+        cartPage.validateSuccessPopup(data.name, data.card);
+    })
+
 
 })
