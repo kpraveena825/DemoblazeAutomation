@@ -76,10 +76,5 @@ I have used the Page Object Model (POM) design pattern to structure the test cod
 <h3>Reference:</h3><br>
 	https://docs.cypress.io/ - Used for cypress configuration and element interactions <br>
 	https://www.npmjs.com/package/cypress-mochawesome-reporter - mocha report integration<br>
-	https://chatgpt.com/ - <br>
-I used ChatGPT to check sample code for alert handling, to read data from fixtures into the spec file and in readme.md to refine the readability and clarity of my sentence while ensuring it remains relevant to the Page Object Model (POM) context.<br><br>
-
-
-**The final submission is my own work, incorporating suggestions from the sources mentioned above.**
 
 
